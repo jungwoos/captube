@@ -18,13 +18,10 @@ class LayoutTemplate extends StatelessWidget {
             constraints: BoxConstraints(maxWidth: 1230),
             child: Column(
               children: <Widget>[
-              NavigationBar(),
-              Expanded(
-                child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
+                NavigationBar(),
+                Expanded(
                   child: child, 
                 )
-              )
               ],
             ),
           ),

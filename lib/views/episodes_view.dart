@@ -20,7 +20,7 @@ class EpisodesView extends StatelessWidget {
       onModelReady: (model) => model.getEpisodes(),
       builder: (context, model, child) => SingleChildScrollView(
         child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
               model.episodes == null

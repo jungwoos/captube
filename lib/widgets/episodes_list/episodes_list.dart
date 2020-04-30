@@ -15,8 +15,8 @@ class EpisodesList extends StatelessWidget {
     return ViewModelProvider<EpisodeListViewModel>.withConsumer(
       viewModel: EpisodeListViewModel(),
       builder: (context, model, child) => Wrap(
-        spacing: 30,
-        runSpacing: 30,
+        spacing: 10,
+        runSpacing: 10,
         children: <Widget>[
           ...episodes
               .asMap()
@@ -25,13 +25,9 @@ class EpisodesList extends StatelessWidget {
                     GestureDetector(
                       child: EpisodeItem(model: episode),
                       onTap: () => model.navigateToEpisode(episode.id),
-                      //.map((index, episode) => MapEntry(
-                    //index,
-                    //GestureDetector(
-                      //child: EpisodeItem(model: episode),
-                      //onTap: () => model.navigateToEpisode(index),
                     ),
-                  ))
+                )
+              )
               .values
               .toList()
         ],

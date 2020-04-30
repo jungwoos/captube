@@ -16,7 +16,7 @@ class DetailItem extends StatelessWidget {
       //      placeholder: CircularProgressIndicator(),
       //      imageUrl: model.url,
       //)
-      child: Image.network(model.url)
+      child: Image.network(model.url, width: 640, height: 360)
       ,fit: BoxFit.fill,
     );
   }
