@@ -14,7 +14,7 @@ class CaptureView extends StatefulWidget {
 class _CaptureViewState extends State<CaptureView> {
   bool _isLoading = false;
   var _data = "Not loaded";
-  var _apiURL = 'http://captube.net:4000/api/v1/capture';
+  var _apiURL = 'http://captube.net/api/v1/capture';
  
   void _fetchData(String url) async {
 //    Map<String, String> headers = {'Content-Type': "application/json"};
