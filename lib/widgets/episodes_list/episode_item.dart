@@ -18,11 +18,14 @@ class EpisodeItem extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            SizedBox(
+            //SizedBox(
+            Container(
               height: 200,
               child: Image.network(model.imageUrl, fit: BoxFit.cover,),
+              alignment: Alignment.center,
             ),
-            SizedBox(
+            Container(
+            //SizedBox(
               height: 50,
               child: Padding(
                 padding: EdgeInsets.fromLTRB(12, 10, 12, 0),
@@ -37,7 +40,8 @@ class EpisodeItem extends StatelessWidget {
                 ), 
               ),
             ),
-            SizedBox(
+            Container(
+            //SizedBox(
               height: 15,
               child: Padding(
                 padding: EdgeInsets.fromLTRB(12, 0, 12, 0),

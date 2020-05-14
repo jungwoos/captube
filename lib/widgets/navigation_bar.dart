@@ -10,20 +10,25 @@ class NavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        title: Padding(
-          child: Text(
-            "CAPTUBE",
-            style: TextStyle(
-                color: Colors.black,
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-              ),
-          ),
-          padding: EdgeInsets.only(left: 12.0),
+        title: 
+          FlatButton(
+            onPressed: (){
+              locator<NavigationService>().navigateTo(HomeRoute);
+              print("pressed");
+            },
+            child: Text(
+              "CAPTUBE",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                ),
+            ),
+          padding: EdgeInsets.only(left: 12.0, right: 12.0),
         ),
 
         actions: <Widget>[
-          FlatButton(
+        /*  FlatButton(
             child: Text(
               "Home",
               style: TextStyle(
@@ -36,7 +41,7 @@ class NavigationBar extends StatelessWidget {
               print("pressed");
             },
           ),
-
+        */
           FlatButton(
             child: Text(
               "Capture",
